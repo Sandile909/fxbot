@@ -1,0 +1,163 @@
+*{
+font-family: 'Gill Sans', 'Gill Sans MT', Sans Serif;
+padding: 0;
+margin: 0;
+color: black;
+box-sizing: border-box;
+outline: none;
+}
+[ng-cloak]{
+display: none;
+}
+body{
+background: white;
+text-align: center;
+}
+header{
+padding: 4%;
+text-align: start;
+background: orange;
+box-shadow: 0 0 5px black;
+}
+header h4{
+color: white;
+text-align: start;
+text-shadow: 1px 1px black;
+}
+.container{
+width: 80%;
+padding: 4%;
+margin: 0 auto;
+border-radius: 1rem;
+box-shadow: 0 0 5px;
+margin-top: 4%;
+text-align: start;
+}
+.containerHeading{
+padding: 4% 0 4% 0;
+background: orange;
+text-align: center;
+border-radius: 0.5rem;
+}
+.containerHeading h4{
+color: white;
+text-shadow: 1px 1px black;
+}
+.containerTexts{
+margin-top: 5%;
+}
+.market{
+display: flex;
+width: 80%;
+margin: 0 auto;
+margin-top: 3%;
+}
+.buyBot{
+background: orange;
+padding: 4%;
+width: 50%;
+border-radius: 0.5rem 0 0 0.5rem;
+text-align: center;
+box-shadow: 0 0 4px;
+cursor: pointer;
+}
+.buyBot h4{
+color: white;
+}
+.seeBot{
+background: darkorange;
+padding: 4%;
+width: 50%;
+cursor: pointer;
+box-shadow: 0 0 4px;
+border-radius: 0 0.5rem 0.5rem 0;
+}
+.seeBot h4{
+color: white;
+}
+dialog{
+width: 100%;
+padding: 3%;
+background: white;
+border-radius: 0.5rem;
+box-shadow: 0 0 4px;
+margin: 0 auto;
+transform: translateY(10%);
+animation: dialogs 3s ease-in;
+}
+@keyframes dialogs{
+from{
+transform: translateY(-120%);
+}
+to{
+
+}
+}
+dialog input{
+width: 100%;
+height: 5vh;
+padding: 0 2%;
+border-radius: 0.3rem;
+border: none;
+border-bottom: 2px solid black;
+}
+dialog input::placeholder{
+color: black;
+}
+dialog button{
+height: 5vh;
+width: 100%;
+margin-top: 3%;
+border: none;
+box-shadow: 0 0 3px;
+border-radius: 0.3rem;
+background: orange;
+}
+@media screen and (min-width: 768px){
+header h4{
+font-size: 1.3rem;
+}
+.containerHeading{
+font-size: 1.3rem;
+}
+.desktop{
+display:flex;
+width: 90%;
+margin: 0 auto;
+gap: 4%;
+}
+.container{
+width: 50%;
+}
+.market{
+width: 50%;
+display: flex;
+flex-direction: column;
+margin-top: 4%;
+}
+.buyBot{
+width: 100%;
+height: 12.5vh;
+border-radius: 0.5rem;
+}
+.buyBot h4{
+margin-top: 25%;
+font-size: 1.3rem;
+}
+.seeBot{
+width: 100%;
+height: 12.5vh;
+margin-top: 3%;
+border-radius: 0.5rem;
+}
+.seeBot h4{
+margin-top: 25%;
+font-size: 1.3rem;
+}
+dialog{
+width: 60%;
+}
+dialog button{
+height: 3vh;
+}
+}
